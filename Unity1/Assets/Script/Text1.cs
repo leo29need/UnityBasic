@@ -29,11 +29,11 @@ public class Text1 : MonoBehaviour
             {
                 Debug.Log("'은색 머리'을 뽑았다!");
             }
-            else if (randomValue <= 30) // 11 ~ 30
+            else if (randomValue <= 30) // 11 ~ 30까지 20% 확률로 뽑는다 조건
             {
                 Debug.Log("'모나'을 뽑았다!");
             }
-            else
+            else // 나머지 정수에 대한 숫자 무작위 아무거나 확률로 뽑는다 조건 
             {
                 Debug.Log("'치치'를 뽑아버렸다!");
             }
@@ -94,9 +94,9 @@ public class Text1 : MonoBehaviour
 
         int randomValue = UnityEngine.Random.Range(1, 101); // 1이상 101미만의 랜덤한 값을 받아 오겠다. (1 ~ 100) 
 
-        int selectNumbe = 0;
+        int selectNumbe = 0; // 0번 부터 라는 뜻
 
-        switch (selectNumbe) //0
+        switch (selectNumbe) // 0 부터 순서대로 시작한다는 의미 
         {
             case 0:
                 // 은색 머리 캐릭터가 나온다
